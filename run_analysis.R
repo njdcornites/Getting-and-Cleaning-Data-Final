@@ -55,5 +55,5 @@ all_data_activityname<-merge(all_data_mean_std, activityLabels,
 all_data_activityname$dataset<-as.factor(all_data_activityname$dataset)
 tidyset <- aggregate(. ~subjectId + activityId, all_data_activityname, mean)
 
-write.table(tidyset, "./getcleandatafinal/tidyset.txt", row.name=FALSE)
+write.table(tidyset, "./Getting and Cleaning Data Final Project/tidyset.txt", row.name=FALSE)
 
